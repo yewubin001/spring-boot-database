@@ -1,0 +1,21 @@
+# Tomcat
+server:
+  port: 8088
+
+# Datasource
+spring:
+  datasource:
+    # MySQL 5.x及以前版本，驱动配置driverClassName是com.mysql.jdbc.Driver。 com.mysql.cj.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cfca?useUnicode=true&characterEncoding=gbk
+    username: root
+    password: root
+
+# pagehelper 分页
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+

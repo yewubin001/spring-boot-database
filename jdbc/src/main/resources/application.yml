@@ -1,0 +1,8 @@
+server:
+  port: 9480
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=gbk
+    username: root
+    password: root

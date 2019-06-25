@@ -1,0 +1,8 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cfca?useUnicode=true&characterEncoding=gbk
+    username: root
+    password: root

@@ -1,0 +1,16 @@
+server:
+  port: 8089
+spring:
+  datasource:
+    master:
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbcUrl: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=gbk
+      username: root
+      password: root
+    slave:
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbcUrl: jdbc:mysql://localhost:3306/test2?useUnicode=true&characterEncoding=gbk
+      username: root
+      password: root
